@@ -1,0 +1,39 @@
+body {
+	margin: 0px !important;
+}
+
+div.clickToPlay {
+	display: flex;
+	justify-content: center;
+}
+
+video {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+	
+video.clickToPlay {
+	max-width: 100vw;
+	min-width: 100vw;
+}
+
+@media screen and (max-width: 8000px) and (min-width: 801px) {
+	div.clickToPlaySquare {
+		display: none;
+	}
+	div.clickToPlay {
+		display: block;
+	}
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 100px) {
+	div.clickToPlaySquare {
+		display: block;
+	}
+	div.clickToPlay {
+		display: none;
+	}
+}
